@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="mian-nav container flex">
+            <img src="logoMy.png" onclick="reload()" alt="Logo">
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-item" id="IPL" onclick="onNavItme('IPL')">IPL</li>
+                    <li class="nav-item" id="Finance" onclick="onNavItme('Finance')">Finance</li>
+                    <li class="nav-item" id="Politics" onclick="onNavItme('Politics')">Politics</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex ">
+                <input type="text" placeholder="Search News" class="news-input">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container container flex">
+        </div>
+    </main>
+
+
+    <template id="card-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/27622732/pexels-photo-27622732/free-photo-of-a-couple-holding-hands-in-front-of-a-green-building.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                    alt="news image" id="news-img">
+            </div>
+            <div class="card-contant">
+                <h3 id="news-title">This is a title</h3>
+                <h6 id="news-time">enter time 27/4/2020</h6>
+                <p id="news-dec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos enim veritatis
+                    sequi molestias, iusto officiis. Quis quidem delectus vel aut.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
