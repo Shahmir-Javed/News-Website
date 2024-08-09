@@ -1,10 +1,8 @@
 const cardContainer = document.querySelector(".card-container");
 const cardTemplate = document.querySelector("#card-template");
 
-// const apiKey = "45af3b86a8414da7a52576abfabdfc00"; // api Key
-// const url = "https://newsapi.org/v2/everything?q=";// api url
-const url = "https://gnews.io/api/v4/search?q=";
-const apiKey = "95da9727d1e3255716bba2281b9ed02f"; 
+const apiKey = "45af3b86a8414da7a52576abfabdfc00"; // api Key
+const url = "https://newsapi.org/v2/everything?q=";// api url
 
 // Add Event Listener on object window to load  default data from API and show on UI page
 window.addEventListener("load", () => {
