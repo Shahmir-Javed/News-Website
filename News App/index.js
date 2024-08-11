@@ -1,3 +1,4 @@
+
 const cardContainer = document.querySelector(".card-container");
 const cardTemplate = document.querySelector("#card-template");
 
@@ -12,8 +13,9 @@ window.addEventListener("load", () => {
 async function DataNews(query) {
   const response = await fetch(`${url}${query}&apiKey=${apiKey}`);
   const data = await response.json();
+  console.log(data);
   showCard(data.articles);
-   if(data.articles.length == 0){
+  if(data.articles.length == 0){
     cardContainer.innerHTML = `<h1 style="display: block;">Data Not Found</h1>`
   }
 }
